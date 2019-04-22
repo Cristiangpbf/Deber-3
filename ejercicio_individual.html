@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>ejercicio_individual</title>
+</head>
+<body>
+    <script>    
+    
+	let c;
+	let sI,sF;
+	
+	sI = parseFloat(prompt("Ingrese el sueldo incial: "));
+	c = parseInt(prompt("Ingrese la categoria a la que pertenece el empleado; "));
+	
+    if(c==1){
+        sF = sI + (sI * 0.15);
+    }else if(c==2){
+        sF = sI + (sI * 0.1);
+    }else if(c==3){
+        sF = sI + (sI * 0.08);
+    }else if(c==4){
+        sF = sI + (sI * 0.07);
+    }else{
+        alert("OPCION NO VALIDA");
+    }
+    
+    alert(`El sueldo inicial era de: ${sI}\nLa categoria del empleado es: ${c}\nEl sueldo final es de: ${sF}`);        
+	
+    </script>
+</body>
+
+</html>
